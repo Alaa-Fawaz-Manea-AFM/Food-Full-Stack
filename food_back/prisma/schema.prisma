@@ -1,0 +1,112 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum OrderStatus {
+  PENDING
+  PREPARING
+  OUT_FOR_DELIVERY
+  DELIVERED
+}
+
+enum PaymentMethod {
+  ONLINE
+  CASH
+}
+
+model User {
+  id         String @id @default(uuid())
+  name       String
+  email      String @unique
+  password   String
+  cartCounts Int    @default(0)
+  role       Role   @default(USER)
+
+  productCounts Int @default(0)
+
+  products Product[]
+  carts    Cart[]
+  orders   Order[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id String @id @default(uuid())
+
+  category  String
+  products  Product[]
+  isDeleted Boolean   @default(false)
+
+  @@unique([category])
+}
+
+model Product {
+  id         String @id @default(uuid())
+  userId     String
+  categoryId String
+
+  title      String
+  desc       String
+  price      Float
+  imageCover String
+  isDeleted  Boolean  @default(false)
+  createdAt  DateTime @default(now())
+
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cart       Cart[]
+  category   Category    @relation(fields: [categoryId], references: [id])
+  orderItems OrderItem[]
+
+  @@unique([id, userId])
+}
+
+model Order {
+  id            String        @id @default(uuid())
+  userId        String
+  totalPrice    Float
+  paymentMethod PaymentMethod
+  status        OrderStatus   @default(PENDING)
+
+  user  User        @relation(fields: [userId], references: [id])
+  items OrderItem[]
+
+  createdAt DateTime @default(now())
+}
+
+model OrderItem {
+  id String @id @default(uuid())
+
+  productId String
+  orderId   String
+
+  product Product @relation(fields: [productId], references: [id])
+
+  order Order @relation(fields: [orderId], references: [id])
+}
+
+model Cart {
+  id        String @id @default(uuid())
+  userId    String
+  productId String
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, productId])
+}

@@ -1,0 +1,254 @@
+{
+  "Navbar": {
+    "menu": "Menu",
+    "orders": "Orders",
+    "admin": "Admin",
+    "category": "Category",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "welcome": "Hi",
+    "guest": "Hi, Guest",
+    "signOut": "Sign Out",
+    "signOutFailed": "Sign Out Failed"
+  },
+  "Footer": {
+    "logo": "Online Foodie",
+    "rights": "All rights reserved."
+  },
+  "Auth": {
+    "brand": "Foodie Online",
+    "login": "Log In",
+    "signUp": "Sign Up",
+    "fillAllFields": "Please fill all fields",
+    "passwordRequirementsError": "Password must meet all requirements!",
+    "passwordStrength": "Password Strength",
+    "strengthLow": "Low",
+    "strengthMedium": "Medium",
+    "strengthStrong": "Strong",
+    "reqDigits": "At least 3 digits (0-9)",
+    "reqUppercase": "At least 3 uppercase letters (A-Z)",
+    "reqLowercase": "At least 3 lowercase letters (a-z)",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Do you want an account?",
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "password": "Password"
+    }
+  },
+  "homePage": {
+    "badge": "Craving Something Delicious?",
+    "title1": "Hungry? Order From",
+    "title2": "Food!",
+    "description": "Get your favorite meals cooked by top chefs and delivered fresh and hot right to your doorstep within minutes.",
+    "exploreMenu": "Explore Our Menu",
+    "trackOrders": "Track Previous Orders",
+    "premiumQualityTitle": "Premium Quality",
+    "premiumQualityDescription": "We use only fresh and clean ingredients for all our meals.",
+    "superFastDeliveryTitle": "Super Fast Delivery",
+    "superFastDeliveryDescription": "Hot and fresh food delivered directly to your home in 30 mins.",
+    "securePaymentsTitle": "Secure Payments",
+    "securePaymentsDescription": "Pay smoothly online via cards or select Cash on Delivery.",
+    "popularTitle": "Our Popular Dishes",
+    "popularDescription": "Check out our top rated dishes loved by everyone.",
+    "viewAll": "View Entire Menu"
+  },
+  "menusPage": {
+    "notFound": "There are no products with this name"
+  },
+  "filter": {
+    "searchPlaceholder": "Search for foods, dishes or categories...",
+    "allCategories": "All Categories",
+    "resetFilters": "Reset Filters",
+    "applySearch": "Apply Search"
+  },
+  "cartPage": {
+    "title": "Shopping Cart",
+    "review": "Review your selected products and checkout.",
+    "emptyTitle": "Your cart is empty",
+    "emptyDescription": "Looks like you haven't added any products to your cart yet.",
+    "discoverProducts": "Discover Products",
+    "items": "Items",
+    "summary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Order Total",
+    "free":"free",
+    "modelTitle": "Select Payment Method",
+    "modelDescription": "Choose how you would like to pay for your food order.",
+    "modelCodTitle": "Cash on Delivery (COD)",
+    "modelCodDescription": "Pay inside your home upon arrival",
+    "modelOnlineTitle": "Online Payment (Card/Wallet)",
+    "modelOnlineDescription": "Secure payment via credit card",
+    "modelFinalTotal": "Final Total:",
+    "modelProcessing": "Processing Order...",
+    "modelBtnPayNow": "Pay Now & Confirm",
+    "modelBtnConfirm": "Confirm Food Order",
+    "checkout": "Proceed to Checkout",
+    "continueShopping": "Continue Shopping"
+  },
+  "OrdersPage": {
+    "title": "My Food Orders",
+    "description": "Track your active orders or check your past meals history.",
+
+    "emptyTitle": "No Orders Found",
+    "emptyDescription": "You haven't ordered any food yet. Explore our delicious menu!",
+    "orderNow": "Order Food Now",
+
+    "id": "ID",
+    "item": "Item",
+    "items": "Items",
+    "trackOrder": "Track Order",
+
+    "status": {
+      "PENDING": "Pending",
+      "PREPARING": "Preparing",
+      "OUT_FOR_DELIVERY": "Out For Delivery",
+      "DELIVERED": "Delivered"
+    }
+  },
+  "OrderTrackingPage": {
+    "orderNotFound": "Order Not Found",
+    "backToMenu": "Back to Menu",
+
+    "liveTracking": "Live Order Tracking",
+    "orderId": "Order ID",
+    "paymentMethod": "Payment Method",
+
+    "active": "Active",
+
+    "itemsOrdered": "Items Ordered",
+
+    "summaryBill": "Summary Bill",
+    "itemsSubtotal": "Items Subtotal",
+    "deliveryFee": "Delivery Fee",
+    "free": "Free",
+    "totalAmountPaid": "Total Amount Paid",
+    "CASH": "CASH",
+    "ONLINE": "ONLINE",
+    "orderSomethingElse": "Order Something Else",
+
+    "status": {
+      "PENDING": "Order Placed",
+      "PREPARING": "Preparing Food",
+      "OUT_FOR_DELIVERY": "Out for Delivery",
+      "DELIVERED": "Delivered"
+    }
+  },
+  "ordersPage": {
+    "title": "My Food Orders",
+    "description": "Track your active orders or check your past meals history.",
+    "emptyTitle": "No Orders Found",
+    "emptyDescription": "You haven't ordered any food yet.",
+    "orderNow": "Order Food Now",
+    "trackOrder": "Track Order"
+  },
+  "AdminPage": {
+    "products": "Products",
+    "orders": "Orders",
+    "users": "Users",
+    "totalProducts": "Total Products",
+    "totalOrders": "Total Orders",
+    "totalUsers": "Total Users"
+  },
+  "AdminProductPage": {
+    "addProduct": "Add Product",
+
+    "productDeletedSuccess": "Product Deleted Successfully",
+    "productDeletedFailed": "Product Delete Failed",
+
+    "table": {
+      "id": "#",
+      "Image": "Image",
+      "Title": "Title",
+      "Price": "Price",
+      "Category": "Category",
+      "Date": "Created At",
+      "Action": "Actions"
+    }
+  },
+  "AdminOrdersPage": {
+  "table": {
+      "id": "#",
+      "customerName": "Customer Name",
+      "email": "Email Address",
+      "totalPrice": "Total Price",
+      "paymentMethod": "Payment Method",
+      "status": "Status",
+      "date": "Order Date"
+    },
+    "noOrdersFound": "No orders found."
+  },
+    "AdminUsersPage": {
+    "table": {
+      "id": "S.No",
+      "Name": "Name",
+      "Email": "Email",
+      "Date": "Date"
+    },
+
+    "noUsersFound": "No users found in this page."
+  },
+    "UpdateProductPage": {
+    "title": "Update Product",
+    "exit": "Exit"
+  },
+  "AddProductPage": {
+    "title": "Add New Product",
+    "exit": "Exit"
+  },
+  "ProductFormPage": {
+    "Title": "Title",
+    "Price": "Price",
+    "Category": "Category",
+    "allCategories": "All Categories",
+    "description": "Description",
+    "productImage": "Product Image",
+    "clickToBrowse": "Click here to",
+    "browse": "Browse",
+    "andUpload": "and upload",
+    "supportedFormats": "Supports PNG, JPG, SVG or WEBP",
+
+    "addProductBtn": "Add Product",
+    "updateProductBtn": "Update Product",
+    "enterTitle": "Enter Title",
+    "enterPrice": "Enter Price",
+    "writeDescription": "Write a detailed product description..."
+  },
+  "CategoriesPage": {
+    "title": "Categories Management",
+    "description": "Create, edit, and organize your product categories."
+  },
+  "CompCreateAndUpdateCategory": {
+    "deletedSuccessfully": "Deleted successfully",
+    "deleteFailed": "Delete failed, reverted changes",
+    "table": {
+      "categoryName": "Category Name",
+      "actions": "Actions"
+    }
+  },
+  "CategoryForm": {
+    "categoryNameRequired": "Category name is required",
+    "added": "Added!",
+    "updated": "Updated!",
+    "operationFailed": "Operation failed",
+
+    "createNewCategory": "Create New Category",
+    "editCategory": "Edit Category",
+    "cancelEdit": "Cancel Edit",
+
+    "categoryName": "Category Name",
+    "categoryPlaceholder": "e.g. Burgers",
+
+    "saveCategory": "Save Category",
+    "updateCategory": "Update Category"
+  },
+  "BtnAddToCart": {
+    "loginRequired": "Sorry, you must login.",
+    "addToCart": "Add To Cart",
+    "deleteFromCart": "Delete From Cart"
+  },
+  "sersh":{
+    "placeholder":"Search for foods, dishes or categories..." 
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "Navbar": {
+    "menu": "القائمة",
+    "orders": "الطلبات",
+    "admin": "لوحة التحكم",
+    "category": "الأقسام",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "welcome": "مرحباً",
+    "guest": "مرحباً",
+    "signOut": "تسجيل الخروج",
+    "signOutFailed": "فشل تسجيل الخروج"
+  },
+  "Footer": {
+    "logo": "Online Foodie",
+    "rights": "جميع الحقوق محفوظة."
+  },
+ "Auth": {
+    "brand": "Foodie Online",
+    "login": "تسجيل الدخول",
+    "signUp": "إنشاء حساب",
+    "fillAllFields": "يرجى ملء جميع الحقول",
+    "passwordRequirementsError": "يجب أن تستوفي كلمة المرور جميع المتطلبات",
+    "passwordStrength": "قوة كلمة المرور",
+    "strengthLow": "ضعيفة",
+    "strengthMedium": "متوسطة",
+    "strengthStrong": "قوية",
+    "reqDigits": "تحتوي على 3 أرقام على الأقل",
+    "reqUppercase": "تحتوي على 3 أحرف كبيرة على الأقل",
+    "reqLowercase": "تحتوي على 3 أحرف صغيرة على الأقل",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "placeholders": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور"
+    }
+  },
+  "homePage": {
+    "badge": "هل تشتهي شيئًا لذيذًا؟",
+    "title1": "جائع؟ اطلب من",
+    "title2": " Foode Online",
+    "description": "احصل على وجباتك المفضلة المطهوة بواسطة أفضل الطهاة ويتم توصيلها طازجة وساخنة إلى باب منزلك خلال دقائق.",
+    "exploreMenu": "استكشف قائمتنا",
+    "trackOrders": "تتبع طلباتك السابقة",
+    "premiumQualityTitle": "جودة ممتازة",
+    "premiumQualityDescription": "نستخدم فقط مكونات طازجة ونظيفة في جميع وجباتنا.",
+    "superFastDeliveryTitle": "توصيل فائق السرعة",
+    "superFastDeliveryDescription": "وجبات ساخنة وطازجة تصل إلى منزلك خلال 30 دقيقة.",
+    "securePaymentsTitle": "مدفوعات آمنة",
+    "securePaymentsDescription": "ادفع بسهولة عبر البطاقات أو اختر الدفع عند الاستلام.",
+    "popularTitle": "أشهر أطباقنا",
+    "popularDescription": "تعرّف على الأطباق الأعلى تقييمًا والمحبوبة من الجميع.",
+    "viewAll": "عرض القائمة كاملة"
+  },
+
+  "menusPage": {
+    "notFound": "لا توجد منتجات بهذا الاسم"
+  },
+  "filter": {
+    "searchPlaceholder": "ابحث عن الأطعمة أو الأطباق أو التصنيفات...",
+    "allCategories": "جميع التصنيفات",
+    "resetFilters": "إعادة تعيين الفلاتر",
+    "applySearch": "تطبيق البحث"
+  },
+  "cartPage": {
+    "title": "سلة التسوق",
+    "review": "راجع المنتجات المختارة وأكمل عملية الشراء.",
+    "emptyTitle": "سلة التسوق فارغة",
+    "emptyDescription": "يبدو أنك لم تضف أي منتجات إلى السلة بعد.",
+    "discoverProducts": "اكتشف المنتجات",
+    "items": "العناصر",
+    "summary": "ملخص الطلب",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "total": "إجمالي الطلب",
+    "free": "مجاني",
+
+    "modelTitle": "اختر طريقة الدفع",
+    "modelDescription": "اختر الطريقة التي ترغب في الدفع بها مقابل طلب الطعام.",
+    "modelCodTitle": "الدفع عند الاستلام",
+    "modelCodDescription": "ادفع عند وصول الطلب إلى منزلك",
+    "modelOnlineTitle": "الدفع الإلكتروني (بطاقة / محفظة)",
+    "modelOnlineDescription": "دفع آمن عبر البطاقة الائتمانية",
+    "modelFinalTotal": "الإجمالي النهائي:",
+    "modelProcessing": "جارٍ معالجة الطلب...",
+    "modelBtnPayNow": "ادفع الآن وأكد الطلب",
+    "modelBtnConfirm": "تأكيد طلب الطعام",
+
+    "checkout": "إتمام الشراء",
+    "continueShopping": "متابعة التسوق"
+  },  "OrdersPage": {
+    "title": "طلباتي",
+    "description": "تتبع طلباتك الحالية أو راجع سجل طلباتك السابقة.",
+
+    "emptyTitle": "لا توجد طلبات",
+    "emptyDescription": "لم تقم بطلب أي وجبات بعد. استكشف قائمتنا اللذيذة الآن!",
+    "orderNow": "اطلب الآن",
+
+    "id": "المعرف",
+    "item": "عنصر",
+    "items": "عناصر",
+    "trackOrder": "تتبع الطلب",
+
+    "status": {
+      "PENDING": "قيد الانتظار",
+      "PREPARING": "قيد التحضير",
+      "OUT_FOR_DELIVERY": "خرج للتوصيل",
+      "DELIVERED": "تم التسليم"
+    }
+  },
+  "OrderTrackingPage": {
+    "orderNotFound": "الطلب غير موجود",
+    "backToMenu": "العودة إلى القائمة",
+
+    "liveTracking": "تتبع الطلب المباشر",
+    "orderId": "رقم الطلب",
+    "paymentMethod": "طريقة الدفع",
+
+    "active": "نشط",
+
+    "itemsOrdered": "الوجبات المطلوبة",
+
+    "summaryBill": "ملخص الفاتورة",
+    "itemsSubtotal": "إجمالي المنتجات",
+    "deliveryFee": "رسوم التوصيل",
+    "free": "مجاني",
+    "totalAmountPaid": "إجمالي المبلغ المدفوع",
+    "orderSomethingElse": "اطلب شيئًا آخر",
+    "CASH": "نقدي",
+    "ONLINE": "الدفع عن بعد",
+
+    "status": {
+      "PENDING": "تم استلام الطلب",
+      "PREPARING": "جارٍ تحضير الطعام",
+      "OUT_FOR_DELIVERY": "خرج للتوصيل",
+      "DELIVERED": "تم التسليم"
+    }
+  },
+  "modal": {},
+
+  "ordersPage": {
+    "title": "طلباتي الغذائية",
+    "description": "تتبع طلباتك الحالية أو راجع سجل وجباتك السابقة.",
+    "emptyTitle": "لا توجد طلبات",
+    "emptyDescription": "لم تقم بطلب أي طعام بعد.",
+    "orderNow": "اطلب الطعام الآن",
+    "trackOrder": "تتبع الطلب"
+  },
+
+  "AdminPage": {
+    "products": "المنتجات",
+    "orders": "الطلبات",
+    "users": "المستخدمون",
+    "totalProducts": "إجمالي المنتجات",
+    "totalOrders": "إجمالي الطلبات",
+    "totalUsers": "إجمالي المستخدمين"
+  },
+
+  "AdminProductPage": {
+    "addProduct": "إضافة منتج",
+
+    "productDeletedSuccess": "تم حذف المنتج بنجاح",
+    "productDeletedFailed": "فشل حذف المنتج",
+
+    "table": {
+      "S No": "#",
+      "Image": "الصورة",
+      "Title": "العنوان",
+      "Price": "السعر",
+      "Category": "التصنيف",
+      "Date": "تاريخ الإنشاء",
+      "Action": "الإجراءات"
+    }
+  },
+
+  "AdminOrdersPage": {
+    "table": {
+      "id": "#",
+      "customerName": "اسم العميل",
+      "email": "البريد الإلكتروني",
+      "totalPrice": "إجمالي السعر",
+      "paymentMethod": "طريقة الدفع",
+      "status": "حالة الطلب",
+      "date": "تاريخ الطلب"
+    },
+    "noOrdersFound": "لا توجد طلبات."
+  },
+
+  "AdminUsersPage": {
+    "table": {
+      "id": "#",
+      "Name": "الاسم",
+      "Email": "البريد الإلكتروني",
+      "Date": "التاريخ"
+    },
+
+    "noUsersFound": "لا يوجد مستخدمون في هذه الصفحة."
+  },
+
+  "UpdateProductPage": {
+    "title": "تعديل المنتج",
+    "exit": "خروج"
+  },
+
+  "AddProductPage": {
+    "title": "إضافة منتج جديد",
+    "exit": "خروج"
+  },
+
+  "ProductFormPage": {
+    "Title": "العنوان",
+    "Price": "السعر",
+    "Category": "التصنيف",
+    "allCategories": "جميع التصنيفات",
+    "description": "الوصف",
+    "productImage": "صورة المنتج",
+    "clickToBrowse": "اضغط هنا",
+    "browse": "لاختيار ملف",
+    "andUpload": "ورفعه",
+    "supportedFormats": "يدعم PNG و JPG و SVG و WEBP",
+
+    "addProductBtn": "إضافة منتج",
+    "updateProductBtn": "تعديل المنتج",
+    "enterTitle": "أدخل عنوان المنتج",
+    "enterPrice": "أدخل سعر المنتج",
+    "writeDescription": "اكتب وصفاً تفصيلياً للمنتج..."
+  },
+
+  "CategoriesPage": {
+    "title": "إدارة التصنيفات",
+    "description": "إنشاء وتعديل وتنظيم تصنيفات المنتجات."
+  },
+  "CategoryForm": {
+    "categoryNameRequired": "اسم التصنيف مطلوب",
+    "added": "تمت الإضافة بنجاح!",
+    "updated": "تم التحديث بنجاح!",
+    "operationFailed": "فشلت العملية",
+
+    "createNewCategory": "إنشاء تصنيف جديد",
+    "editCategory": "تعديل التصنيف",
+    "cancelEdit": "إلغاء التعديل",
+
+    "categoryName": "اسم التصنيف",
+    "categoryPlaceholder": "مثال: البرجر",
+
+    "saveCategory": "حفظ التصنيف",
+    "updateCategory": "تحديث التصنيف"
+  },
+  "CompCreateAndUpdateCategory": {
+    "deletedSuccessfully": "تم الحذف بنجاح",
+    "deleteFailed": "فشل الحذف وتم التراجع عن التغييرات",
+
+    "table": {
+      "categoryName": "اسم التصنيف",
+      "actions": "الإجراءات"
+    }
+  },
+  "BtnAddToCart": {
+    "loginRequired": "عذرًا، يجب عليك تسجيل الدخول أولاً.",
+    "addToCart": "إضافة إلى السلة",
+    "deleteFromCart": "إزالة من السلة"
+  },
+  "sersh":{
+    "placeholder": "ابحث عن الأطعمة أو الأطباق أو التصنيفات..."
+  }
+}
