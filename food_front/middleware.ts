@@ -118,13 +118,14 @@ export async function middleware(request: NextRequest) {
 
     const { payload } = await jwtVerify(token, secret);
 
-    if (isAdminRoute && payload.role !== "ADMIN") {
-      return NextResponse.redirect(new URL(`/${locale}`, request.url));
-    }
+    // if (isAdminRoute && payload.role !== "ADMIN") {
+    //   return NextResponse.redirect(new URL(`/${locale}`, request.url));
+    // }
 
     return response;
   } catch {
-    return NextResponse.redirect(new URL(`/${locale}/log-in`, request.url));
+    return;
+    // return NextResponse.redirect(new URL(`/${locale}/log-in`, request.url));
   }
 }
 
