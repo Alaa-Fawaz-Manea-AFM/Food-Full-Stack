@@ -89,6 +89,7 @@ export async function middleware(request: NextRequest) {
   const cleanPath = pathname.replace(/^\/(ar|en)/, "") || "/";
 
   const token = request.cookies.get("accessToken")?.value;
+  console.log("🚀 ~ middleware ~ token:", token);
 
   const isProtectedRoute =
     cleanPath === "/cart" ||
@@ -129,6 +130,20 @@ export async function middleware(request: NextRequest) {
   }
 }
 
+// export const config = {
+//   matcher: ["/", "/(ar|en)/:path*", "/((?!api|trpc|_next|_vercel|.*\\..*).*)"],
+// };
 export const config = {
-  matcher: ["/", "/(ar|en)/:path*", "/((?!api|trpc|_next|_vercel|.*\\..*).*)"],
+  matcher: [
+    "/",
+    "/(ar|en)/:path*",
+    "/cart",
+    "/order",
+    "/order/:path*",
+    "/category",
+    "/category/:path*",
+    "/admin",
+    "/admin/:path*",
+    "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
+  ],
 };
