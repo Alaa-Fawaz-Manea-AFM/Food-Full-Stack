@@ -12,7 +12,6 @@ import AxiosClient from "../lib/axios-client";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import axios from "axios";
 
-export const validEmail = process.env.NEXT_PUBLIC_EMAIL_KEY;
 export const ROLE_ADMIN = process.env.NEXT_PUBLIC_ROLE_ADMIN;
 
 export const getUserData = async () => {

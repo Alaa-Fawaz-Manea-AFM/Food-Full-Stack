@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
       images: uploadedImages,
       statusCode: 200,
     });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ msg: "Error in file upload", statusCode: 500 });
   }
 }

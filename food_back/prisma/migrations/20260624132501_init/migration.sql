@@ -23,13 +23,24 @@ CREATE TABLE "User" (
 );
 
 -- CreateTable
+CREATE TABLE "Category" (
+    "id" TEXT NOT NULL,
+    "category" TEXT NOT NULL,
+    "isDeleted" BOOLEAN NOT NULL DEFAULT false,
+
+    CONSTRAINT "Category_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
 CREATE TABLE "Product" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
+    "categoryId" TEXT NOT NULL,
     "title" TEXT NOT NULL,
     "desc" TEXT NOT NULL,
     "price" DOUBLE PRECISION NOT NULL,
     "imageCover" TEXT NOT NULL,
+    "isDeleted" BOOLEAN NOT NULL DEFAULT false,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Product_pkey" PRIMARY KEY ("id")
@@ -52,7 +63,6 @@ CREATE TABLE "OrderItem" (
     "id" TEXT NOT NULL,
     "productId" TEXT NOT NULL,
     "orderId" TEXT NOT NULL,
-    "quantity" INTEGER NOT NULL,
 
     CONSTRAINT "OrderItem_pkey" PRIMARY KEY ("id")
 );
@@ -70,6 +80,9 @@ CREATE TABLE "Cart" (
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
 
 -- CreateIndex
+CREATE UNIQUE INDEX "Category_category_key" ON "Category"("category");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "Product_id_userId_key" ON "Product"("id", "userId");
 
 -- CreateIndex
@@ -77,6 +90,9 @@ CREATE UNIQUE INDEX "Cart_userId_productId_key" ON "Cart"("userId", "productId")
 
 -- AddForeignKey
 ALTER TABLE "Product" ADD CONSTRAINT "Product_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "Product" ADD CONSTRAINT "Product_categoryId_fkey" FOREIGN KEY ("categoryId") REFERENCES "Category"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "Order" ADD CONSTRAINT "Order_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

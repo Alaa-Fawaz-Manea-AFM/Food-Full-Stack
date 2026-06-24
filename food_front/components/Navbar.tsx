@@ -60,25 +60,28 @@ const Navbar = () => {
                   className="fixed inset-0 z-40"
                   onClick={() => setLangDropdown(false)}
                 />
-
-                <div className="absolute right-0 mt-2 w-32 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-xl py-1 z-50 bg-primary">
+                <div
+                  className={`absolute mt-2 w-32 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-xl py-1 z-50 bg-primary dark:bg-secondary ${
+                    currentLocale === "ar" ? "left-0" : "right-0"
+                  }`}
+                >
                   <button
                     onClick={() => handleLangChange("en")}
-                    className={`w-full text-left px-4 py-2 text-xs font-bold transition-colors flex items-center justify-between ${
+                    className={`w-full px-4 py-2 text-xs font-bold transition-colors flex items-center justify-between cursor-pointer ${
                       currentLocale === "en"
-                        ? "text-custom-green"
+                        ? "text-custom-green bg-zinc-50/50 dark:bg-zinc-800/30"
                         : "text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                    }`}
+                    } ${currentLocale === "ar" ? "text-right" : "text-left"}`}
                   >
                     English (EN)
                   </button>
                   <button
                     onClick={() => handleLangChange("ar")}
-                    className={`w-full text-left px-4 py-2 text-xs font-bold transition-colors flex items-center justify-between ${
+                    className={`w-full px-4 py-2 text-xs font-bold transition-colors flex items-center justify-between cursor-pointer ${
                       currentLocale === "ar"
-                        ? "text-custom-green"
+                        ? "text-custom-green bg-zinc-50/50 dark:bg-zinc-800/30"
                         : "text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                    }`}
+                    } ${currentLocale === "ar" ? "text-right" : "text-left"}`}
                   >
                     العربية (AR)
                   </button>
