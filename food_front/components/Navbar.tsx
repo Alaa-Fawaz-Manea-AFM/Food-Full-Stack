@@ -27,7 +27,7 @@ const Navbar = () => {
           className="flex items-center hover:opacity-90 transition-opacity"
         >
           <span className="text-3xl max-xxs:text-2xl font-semibold hover:underline">
-            Online Foodie
+            Foodie
           </span>
         </Link>
       </div>

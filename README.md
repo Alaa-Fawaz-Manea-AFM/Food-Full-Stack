@@ -1,4 +1,4 @@
-# 🍔 Online Food Ordering Web Application (Task Prototype)
+# 🍔 Food Ordering Web Application (Task Prototype)
 
 A fully functional, highly responsive, and feature-rich **Online Food Ordering Web Application** built within a **24-hour time constraint** as part of the technical evaluation process for **Electro Pi**.
 
@@ -36,7 +36,7 @@ This project leverages a modern, cutting-edge tech stack focused on high perform
 ### 3. 💳 Flexible Payment Options (Modal Integration)
 * Custom-built **Checkout Modal** supporting:
   * **Cash on Delivery (COD)** with instant local confirmation.
-  * **Online Payment (Card/Wallet)** prepared for secure gateway redirects.
+  * ** Payment (Card/Wallet)** prepared for secure gateway redirects.
 
 ### 4. 📍 Order Status Tracking
 * Instant navigation upon order completion to unique tracking endpoints.
