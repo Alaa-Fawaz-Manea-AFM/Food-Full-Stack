@@ -1,6 +1,5 @@
 "use client";
 import { ICart } from "@/types";
-// import Link from "next/link";
 import ProductDiv from "./ProductDiv";
 import { useEffect, useState } from "react";
 import { FaShoppingBag, FaMoneyBillWave, FaCreditCard } from "react-icons/fa";

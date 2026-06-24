@@ -2,7 +2,6 @@ import { Link } from "@/i18n/navigation";
 import { AxiosServer } from "@/lib/axios-server";
 import { IOrder } from "@/types";
 import { getLocale, getTranslations } from "next-intl/server";
-// import Link from "next/link";
 
 import { FaChevronRight, FaShoppingBag, FaCalendarAlt } from "react-icons/fa";
 

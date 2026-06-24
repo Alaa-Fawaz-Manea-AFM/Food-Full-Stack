@@ -1,6 +1,5 @@
 "use client";
 
-// import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";

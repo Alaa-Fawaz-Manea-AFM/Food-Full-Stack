@@ -1,7 +1,6 @@
 import { InputSignUp } from "@/constant/Constant";
 import { Form_log_In_Up } from "@/components";
 import { Metadata } from "next";
-// import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 

@@ -2,7 +2,6 @@ import { Link } from "@/i18n/navigation";
 import BtnAddToCart from "./BtnAddToCart";
 import { ICart, IProduct } from "@/types";
 import Image from "next/image";
-// import Link from "next/link";
 import { SetStateAction } from "react";
 
 const ProductDiv = ({

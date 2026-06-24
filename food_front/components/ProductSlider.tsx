@@ -1,7 +1,6 @@
 "use client";
 import { Link } from "@/i18n/navigation";
 import ProductDiv from "./ProductDiv";
-// import Link from "next/link";
 import { IProduct } from "@/types";
 
 const ProductSlider = ({

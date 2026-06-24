@@ -33,7 +33,6 @@ const AdminOrders = ({ page = 1 }: ISearchParams) => {
   return (
     <div className="w-[95%] md:w-[90%] mx-auto mt-6">
       <div className="w-full overflow-x-auto rounded-2xl border border-custom-green dark:border-zinc-800 shadow-xl">
-        {/* 🌐 تم تحويل text-left ليدعم الاتجاهين تلقائياً عبر الـ rtl:text-right */}
         <table className="w-full text-sm text-left rtl:text-right text-zinc-500 dark:text-zinc-400 border-collapse">
           <thead className="text-xs text-zinc-700 uppercase border-b border-custom-green  dark:bg-zinc-900/50">
             <tr>
@@ -52,7 +51,6 @@ const AdminOrders = ({ page = 1 }: ISearchParams) => {
           <tbody>
             {orders && orders?.orders?.length > 0 ? (
               orders?.orders?.map((order, i) => {
-                // 🔴 البيانات المفككة المطلوبة من الـ order
                 const { createdAt, user, totalPrice, paymentMethod, status } =
                   order;
 
@@ -61,32 +59,26 @@ const AdminOrders = ({ page = 1 }: ISearchParams) => {
                     key={i}
                     className="transition-colors duration-150 border-b border-zinc-100 dark:border-zinc-800/50"
                   >
-                    {/* 1. الرقم التسلسلي */}
                     <td className="px-6 py-4 font-semibold text-zinc-900 dark:text-zinc-300 whitespace-nowrap">
                       {i + 1}
                     </td>
 
-                    {/* 2. اسم العميل */}
                     <td className="px-6 py-4 font-medium text-zinc-800 dark:text-zinc-200 whitespace-nowrap">
                       {user?.name || t("guest")}
                     </td>
 
-                    {/* 3. البريد الإلكتروني للعميل */}
                     <td className="px-6 py-4 max-w-46 truncate text-zinc-400 dark:text-zinc-500">
                       {user?.email || "-"}
                     </td>
 
-                    {/* 4. إجمالي السعر */}
                     <td className="px-6 py-4 font-bold text-custom-green whitespace-nowrap">
                       ${totalPrice}
                     </td>
 
-                    {/* 5. طريقة الدفع */}
                     <td className="px-6 py-4 whitespace-nowrap font-medium">
                       {paymentMethod}
                     </td>
 
-                    {/* 6. حالة الطلب */}
                     <td className="px-6 py-4 whitespace-nowrap">
                       <span
                         className={`px-2.5 py-1 rounded-full text-xs font-semibold ${
@@ -99,7 +91,6 @@ const AdminOrders = ({ page = 1 }: ISearchParams) => {
                       </span>
                     </td>
 
-                    {/* 7. تاريخ الطلب */}
                     <td className="px-6 py-4 whitespace-nowrap text-zinc-400 dark:text-zinc-500">
                       {formatDate(createdAt)}
                     </td>

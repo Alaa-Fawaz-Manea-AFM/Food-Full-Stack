@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Bg_Navbar, Btn_Cart, NavLink, Toggle_Navbar } from ".";
-// import Link from "next/link";
 import BtnDark from "./Btn_Dark";
 import { FaGlobe, FaChevronDown } from "react-icons/fa";
 import { useLocale } from "next-intl";

@@ -7,7 +7,6 @@ import {
   ISearchParams,
 } from "@/types";
 import Image from "next/image";
-// import Link from "next/link";
 import ComSearchAdmin from "./ComSearchAdmin";
 import { useUserContextAdmin } from "@/context/AdminMyState";
 import { useEffect } from "react";

@@ -1,5 +1,3 @@
-// import { redirect } from "next/navigation";
-
 import { redirect } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 

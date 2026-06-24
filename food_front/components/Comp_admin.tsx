@@ -4,7 +4,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { adminTab } from "@/constant/Constant";
 import { FaUserTie } from "react-icons/fa";
 import { ISearchParams } from "@/types";
-// import Link from "next/link";
 import { useUserContextAdmin } from "@/context/AdminMyState";
 import { useEffect } from "react";
 import AxiosClient from "@/lib/axios-client";

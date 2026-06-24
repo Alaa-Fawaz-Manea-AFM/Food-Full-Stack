@@ -3,7 +3,6 @@ import { AxiosServer } from "@/lib/axios-server";
 import { IOrderItem } from "@/types";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-// import Link from "next/link";
 import { FaUtensils, FaClock, FaTruck, FaCheckCircle } from "react-icons/fa";
 
 const getOrderDetails = async (orderId: string) => {

@@ -2,7 +2,6 @@
 import { useUserContext } from "@/context/MyState";
 import { Link } from "@/i18n/navigation";
 import { FaCartPlus } from "react-icons/fa";
-// import Link from "next/link";
 
 const Btn_Cart = () => {
   const { user } = useUserContext();

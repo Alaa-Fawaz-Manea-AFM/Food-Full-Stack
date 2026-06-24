@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-// import { useRouter, useSearchParams } from "next/navigation";
 import { CiSearch } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { useTranslations } from "next-intl";

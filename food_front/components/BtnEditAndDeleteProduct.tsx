@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { SquarePen, Trash2, AlertTriangle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-// import Link from "next/link";
 
 interface BtnDeleteProductProps {
   menuId: string;
