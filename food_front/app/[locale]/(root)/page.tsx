@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaUtensils, FaTruck, FaShieldAlt, FaArrowRight } from "react-icons/fa";
 import { heroImage } from "@/public/assets";
 import { useLocale, useTranslations } from "next-intl";
+import { homeHeroImg_1, homeHeroImg_2, homeHeroImg_3 } from "@/public/assets";
 
 export default function HomePage() {
   const t = useTranslations("homePage");
@@ -11,17 +12,17 @@ export default function HomePage() {
     {
       title: "Classic Cheeseburger",
       price: "$8.99",
-      img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format&fit=crop",
+      img: homeHeroImg_1,
     },
     {
       title: "Pepperoni Pizza",
       price: "$14.99",
-      img: "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=400&auto=format&fit=crop",
+      img: homeHeroImg_2,
     },
     {
       title: "Fettuccine Alfredo",
       price: "$12.99",
-      img: "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?q=80&w=400&auto=format&fit=crop",
+      img: homeHeroImg_3,
     },
   ];
 
@@ -138,7 +139,7 @@ export default function HomePage() {
             {featuredFoods.map((food, i) => (
               <div
                 key={i}
-                className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-4 space-y-4 shadow-xs group"
+                className="dark:bg-zinc-900 border border-custom-green dark:border-custom-green rounded-2xl p-4 space-y-4 shadow-xs group"
               >
                 <div className="h-48 w-full relative rounded-xl overflow-hidden bg-zinc-100 dark:bg-zinc-950">
                   <Image
