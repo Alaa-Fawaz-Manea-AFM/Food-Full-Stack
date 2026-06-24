@@ -110,7 +110,6 @@ const AdminOrders = ({ page = 1 }: ISearchParams) => {
           </tbody>
         </table>
       </div>
-
       <div className="mt-4">
         <BtnPaginations
           totalPage={orders?.meta?.totalPages || 1}
