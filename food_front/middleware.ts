@@ -19,6 +19,7 @@ export async function middleware(request: NextRequest) {
     pathname === "/order" ||
     pathname.startsWith("/order/") ||
     pathname.startsWith("/admin");
+  console.log("🚀 ~ middleware ~ isProtectedRoute:", isProtectedRoute);
 
   const isAdminRoute =
     pathname.startsWith("/admin") ||
@@ -28,7 +29,7 @@ export async function middleware(request: NextRequest) {
   if (isProtectedRoute) {
     if (!token) {
       if (pathname === "/cart") {
-        return NextResponse.redirect(new URL("/products", request.url));
+        return NextResponse.redirect(new URL("/menu", request.url));
       }
 
       return NextResponse.redirect(new URL("/log-in", request.url));
