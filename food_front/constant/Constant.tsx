@@ -47,15 +47,15 @@ export const adminAddData = [
   {
     auto: true,
     type: "text",
-    name: "Title",
+    name: "title",
   },
   {
     type: "text",
-    name: "Price",
+    name: "price",
   },
   {
     select: true,
-    name: "Category",
+    name: "category",
   },
 ];
 

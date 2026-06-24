@@ -114,7 +114,6 @@ const Form_add_And_Update_Prod = ({
                     value={productObj.category?.id || ""}
                     onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
                       const selectedId = e.target.value;
-
                       if (!selectedId) {
                         setProductObj((pre: IPartialProduct) => ({
                           ...pre,
@@ -130,7 +129,7 @@ const Form_add_And_Update_Prod = ({
                       if (foundCategory) {
                         setProductObj((pre: IPartialProduct) => ({
                           ...pre,
-                          [add.name]: {
+                          category: {
                             id: foundCategory.id,
                             category: foundCategory.category,
                           },
@@ -140,11 +139,13 @@ const Form_add_And_Update_Prod = ({
                     className="dark:bg-custom-gray border border-custom-green  outline-none sm:text-sm rounded-xl w-full p-3 transition-all duration-200 shadow-2xs"
                   >
                     <option value="">{t("allCategories")}</option>
-                    {category?.map((cat) => (
-                      <option key={cat.id} value={cat.id}>
-                        {cat.category}
-                      </option>
-                    ))}
+                    {category?.map((cat) => {
+                      return (
+                        <option key={cat.id} value={cat.id}>
+                          {cat.category}
+                        </option>
+                      );
+                    })}
                   </select>
                 )}
               </div>

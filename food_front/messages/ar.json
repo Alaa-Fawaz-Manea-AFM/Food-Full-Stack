@@ -211,9 +211,9 @@
   },
 
   "ProductFormPage": {
-    "Title": "العنوان",
-    "Price": "السعر",
-    "Category": "التصنيف",
+    "title": "العنوان",
+    "price": "السعر",
+    "category": "التصنيف",
     "allCategories": "جميع التصنيفات",
     "description": "الوصف",
     "productImage": "صورة المنتج",
@@ -224,8 +224,8 @@
 
     "addProductBtn": "إضافة منتج",
     "updateProductBtn": "تعديل المنتج",
-    "enterTitle": "أدخل عنوان المنتج",
-    "enterPrice": "أدخل سعر المنتج",
+    "entertitle": "أدخل عنوان المنتج",
+    "enterprice": "أدخل سعر المنتج",
     "writeDescription": "اكتب وصفاً تفصيلياً للمنتج..."
   },
 

@@ -200,9 +200,9 @@
     "exit": "Exit"
   },
   "ProductFormPage": {
-    "Title": "Title",
-    "Price": "Price",
-    "Category": "Category",
+    "title": "Title",
+    "price": "Price",
+    "category": "Category",
     "allCategories": "All Categories",
     "description": "Description",
     "productImage": "Product Image",
@@ -213,8 +213,8 @@
 
     "addProductBtn": "Add Product",
     "updateProductBtn": "Update Product",
-    "enterTitle": "Enter Title",
-    "enterPrice": "Enter Price",
+    "entertitle": "Enter Title",
+    "enterprice": "Enter Price",
     "writeDescription": "Write a detailed product description..."
   },
   "CategoriesPage": {

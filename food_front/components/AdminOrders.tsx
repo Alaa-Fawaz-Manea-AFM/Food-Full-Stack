@@ -28,8 +28,6 @@ const AdminOrders = ({ page = 1 }: ISearchParams) => {
     fetchUser();
   }, [page]);
 
-  console.log("🚀 ~ AdminOrders ~ orders:", orders);
-
   return (
     <div className="w-[95%] md:w-[90%] mx-auto mt-6">
       <div className="w-full overflow-x-auto rounded-2xl border border-custom-green dark:border-zinc-800 shadow-xl">

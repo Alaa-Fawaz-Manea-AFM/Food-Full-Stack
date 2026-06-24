@@ -97,6 +97,7 @@ export const addProduct = async (
     });
 
     toast.success("Product added successfully");
+    router.push("/admin");
   } catch (error) {
     if (axios.isAxiosError(error)) {
       toast.error(error.response?.data?.message || "Oops, Please try again");
