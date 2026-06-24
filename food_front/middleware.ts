@@ -9,8 +9,10 @@ export async function middleware(request: NextRequest) {
   const intlResponse = intlMiddleware(request);
 
   const token = request.cookies.get("accessToken")?.value;
+  console.log("🚀 ~ middleware ~ token:", token);
 
   const pathname = request.nextUrl.pathname.replace(/^\/(ar|en)/, "") || "/";
+  console.log("🚀 ~ middleware ~ pathname:", pathname);
 
   const isProtectedRoute =
     pathname === "/cart" ||
@@ -36,13 +38,17 @@ export async function middleware(request: NextRequest) {
       const secret = new TextEncoder().encode(process.env.JWT_SECRET_KEY);
 
       const { payload } = await jwtVerify(token, secret);
+      console.log("🚀 ~ middleware ~ payload:", payload);
 
       const decoded = payload;
 
       if (isAdminRoute && decoded.role !== "ADMIN") {
+        console.log("00000000000000");
+
         return NextResponse.redirect(new URL("/", request.url));
       }
     } catch {
+      console.log("111111111111");
       return NextResponse.redirect(new URL("/log-in", request.url));
     }
   }
