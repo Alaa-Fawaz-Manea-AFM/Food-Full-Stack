@@ -23,7 +23,7 @@ export const getToken = () => {
 
 const getCookie = async () => {
   const cookiesStore = await cookies();
-  const token = cookiesStore.get("accessToken0");
+  const token = cookiesStore.get("accessToken");
 
   return token;
 };
