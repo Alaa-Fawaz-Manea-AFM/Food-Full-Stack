@@ -90,6 +90,7 @@ export async function middleware(request: NextRequest) {
 
   const token = request.cookies.get("accessToken")?.value;
   console.log("🚀 ~ middleware ~ token:", token);
+  console.log("🚀 ~ middleware ~ token:", request.cookies.get("accessToken"));
 
   const isProtectedRoute =
     cleanPath === "/cart" ||
