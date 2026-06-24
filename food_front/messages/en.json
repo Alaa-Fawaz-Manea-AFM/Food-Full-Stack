@@ -85,7 +85,9 @@
     "modelBtnPayNow": "Pay Now & Confirm",
     "modelBtnConfirm": "Confirm Food Order",
     "checkout": "Proceed to Checkout",
-    "continueShopping": "Continue Shopping"
+    "continueShopping": "Continue Shopping",
+    "notFound": "Product not found"
+
   },
   "OrdersPage": {
     "title": "My Food Orders",

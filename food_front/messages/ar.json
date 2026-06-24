@@ -88,8 +88,10 @@
     "modelBtnConfirm": "تأكيد طلب الطعام",
 
     "checkout": "إتمام الشراء",
-    "continueShopping": "متابعة التسوق"
-  },  "OrdersPage": {
+    "continueShopping": "متابعة التسوق",
+    "notFound": "المنتج غير موجود"
+  },  
+  "OrdersPage": {
     "title": "طلباتي",
     "description": "تتبع طلباتك الحالية أو راجع سجل طلباتك السابقة.",
 
