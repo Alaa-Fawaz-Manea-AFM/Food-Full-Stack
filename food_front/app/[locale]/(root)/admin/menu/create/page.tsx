@@ -1,8 +1,9 @@
 import { Form_add_And_Update_Prod } from "@/components";
 import { AiOutlineClose } from "react-icons/ai";
 import { Metadata } from "next";
-import Link from "next/link";
+// import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "Add Product",

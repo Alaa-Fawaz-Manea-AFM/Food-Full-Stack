@@ -1,9 +1,9 @@
-import Link from "next/link";
 import Image from "next/image";
 import { FaUtensils, FaTruck, FaShieldAlt, FaArrowRight } from "react-icons/fa";
 import { heroImage } from "@/public/assets";
 import { useLocale, useTranslations } from "next-intl";
 import { homeHeroImg_1, homeHeroImg_2, homeHeroImg_3 } from "@/public/assets";
+import { Link } from "@/i18n/navigation";
 
 export default function HomePage() {
   const t = useTranslations("homePage");

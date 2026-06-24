@@ -1,9 +1,8 @@
 import { Filter, ProductDiv } from "@/components";
 import BtnPaginations from "@/components/BtnPaginations";
 import { AxiosServer } from "@/lib/axios-server";
-import { IProduct, IProductAndMeta, ISearchParams } from "@/types";
+import { IProductAndMeta, ISearchParams } from "@/types";
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {

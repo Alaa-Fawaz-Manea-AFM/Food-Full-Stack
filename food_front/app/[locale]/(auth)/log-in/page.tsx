@@ -1,8 +1,9 @@
 import { InputLogIn } from "@/constant/Constant";
 import { Form_log_In_Up } from "@/components";
 import { Metadata } from "next";
-import Link from "next/link";
+// import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "Log In",

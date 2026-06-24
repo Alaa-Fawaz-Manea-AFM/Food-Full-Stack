@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import { Bg_Navbar, Btn_Cart, NavLink, Toggle_Navbar } from ".";
-import Link from "next/link";
+// import Link from "next/link";
 import BtnDark from "./Btn_Dark";
 import { FaGlobe, FaChevronDown } from "react-icons/fa";
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 
 const Navbar = () => {
   const [langDropdown, setLangDropdown] = useState(false);

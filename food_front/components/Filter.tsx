@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+// import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
@@ -8,6 +8,8 @@ import { ICategory } from "@/types";
 import { useUserContext } from "@/context/MyState";
 import AxiosClient from "@/lib/axios-client";
 import { useTranslations } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { useSearchParams } from "next/navigation";
 
 const Filter = () => {
   const t = useTranslations("filter");

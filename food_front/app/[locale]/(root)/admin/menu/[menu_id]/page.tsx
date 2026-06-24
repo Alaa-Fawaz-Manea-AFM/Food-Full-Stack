@@ -1,10 +1,11 @@
 import { Form_add_And_Update_Prod } from "@/components";
 import { AiOutlineClose } from "react-icons/ai";
 import { Metadata } from "next";
-import Link from "next/link";
+// import Link from "next/link";
 import { AxiosServer } from "@/lib/axios-server";
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "Update Product",

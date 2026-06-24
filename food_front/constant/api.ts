@@ -16,7 +16,7 @@ export const ROLE_ADMIN = process.env.NEXT_PUBLIC_ROLE_ADMIN;
 
 export const getUserData = async () => {
   const { data } = await AxiosClient.get("auth/me");
-  return data?.data || null;
+  return data.data || null;
 };
 
 export const formatDate = (createdAt: string) => {

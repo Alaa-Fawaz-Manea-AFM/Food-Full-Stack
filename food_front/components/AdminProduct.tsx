@@ -7,7 +7,7 @@ import {
   ISearchParams,
 } from "@/types";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import ComSearchAdmin from "./ComSearchAdmin";
 import { useUserContextAdmin } from "@/context/AdminMyState";
 import { useEffect } from "react";
@@ -17,6 +17,7 @@ import BtnEditAndDeleteProduct from "./BtnEditAndDeleteProduct";
 import { toast } from "react-toastify";
 import BtnPaginations from "./BtnPaginations";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const AdminProduct = ({ page, search }: ISearchParams) => {
   const t = useTranslations("AdminProductPage");
