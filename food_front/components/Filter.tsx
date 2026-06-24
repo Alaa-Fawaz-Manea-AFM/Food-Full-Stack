@@ -61,7 +61,7 @@ const Filter = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const { data } = await AxiosClient.get("filter");
+        const { data } = await AxiosClient.get("categories");
         setCategory(data?.data || []);
       } catch {
         setCategory([]);
@@ -71,6 +71,7 @@ const Filter = () => {
     if (category.length > 0) return;
     fetchUser();
   }, []);
+  console.log(category);
 
   return (
     <div className="border border-custom-green dark:border-custom-green p-6 rounded-2xl shadow-xl max-w-2xl mx-auto mt-5 bg-primary dark:bg-secondary transition-all">
