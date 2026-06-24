@@ -105,18 +105,18 @@ export async function middleware(request: NextRequest) {
     return response;
   }
 
-  if (!token) {
-    if (cleanPath === "/cart") {
-      return NextResponse.redirect(new URL(`/${locale}/menu`, request.url));
-    }
+  // if (!token) {
+  //   if (cleanPath === "/cart") {
+  //     return NextResponse.redirect(new URL(`/${locale}/menu`, request.url));
+  //   }
 
-    return NextResponse.redirect(new URL(`/${locale}/log-in`, request.url));
-  }
+  //   return NextResponse.redirect(new URL(`/${locale}/log-in`, request.url));
+  // }
 
   try {
     const secret = new TextEncoder().encode(process.env.JWT_SECRET_KEY);
 
-    const { payload } = await jwtVerify(token, secret);
+    // const { payload } = await jwtVerify(token, secret);
 
     // if (isAdminRoute && payload.role !== "ADMIN") {
     //   return NextResponse.redirect(new URL(`/${locale}`, request.url));
