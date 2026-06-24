@@ -66,6 +66,7 @@ export const config = {
     "/order/:path*",
     "/category",
     "/category/:path*",
+    "/admin",
     "/admin/:path*",
     "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
   ],

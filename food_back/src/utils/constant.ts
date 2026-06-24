@@ -1,4 +1,4 @@
-const Roles = ['ADMIN', 'ADMIN'];
+const Roles = ['ADMIN', 'USER'];
 
 const [ADMIN, USER]: string[] = Roles;
 
